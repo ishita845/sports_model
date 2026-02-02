@@ -33,21 +33,32 @@ real cricket videos and try to deal with them in a practical way. I wanted the f
 something that makes sense and could be useful in a real setting, even if it is not flawless.
 
 **MediaPipe Pose**
+
 MediaPipe Pose was selected after evaluating alternatives such as YOLO Pose and RTMPose.
 Reasons for choosing MediaPipe:
+
   Works reliably on phone-recorded videos
+  
   Performs well even with limited data
+  
   Handles partial occlusion from practice nets better than many models
+  
   Provides 33 detailed body landmarks, including foot keypoints
+  
   Stable and usable out of the box without training or fine-tuning
+  
 Since the goal was movement analysis rather than model training, MediaPipe was the most suitable choice for this assignment.
 
  **Metrics Defined**
+ 
 The following metrics were extracted from the pose data:
+
    Lead Elbow Angle
 Helps evaluate bat control and straight bat path during the shot.
+
    Lead Knee Stability
 Indicates balance and power generation through the front leg.
+
    Trunk Lean
 Measures body balance and weight transfer during the stroke.
 

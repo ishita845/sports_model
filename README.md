@@ -1,11 +1,15 @@
 I’ve kept this main page brief so you can see the results quickly.
 
 main.py: The code for the project the main logic.
+
 keypoint_metrics.csv: The raw data extracted from the video.
+
 overlay_video.mp4: Visual proof of the tracking
+
 Documentation/: 
 This folder contains a Detailed Technical Report covering my full observation of the jitter/occlusion issues,
 my logic for splitting data (70/15/15), and my long-term plan to adapt this for professional cricket academies.
+
 
 Note: Real-world data is messy. You’ll notice some jitter due to the practice netting, but I’ve built the pipeline to prioritize
 "real-world phone footage" over "perfect lab data" because that’s what coaches actually use.

@@ -41,18 +41,16 @@ something that makes sense and could be useful in a real setting, even if it is 
 MediaPipe Pose was selected after evaluating alternatives such as YOLO Pose and RTMPose.
 Reasons for choosing MediaPipe:
 
-  Works reliably on phone-recorded videos
+  -Works reliably on phone-recorded videos
   
-  Performs well even with limited data
+  -Performs well even with limited data
   
-  Handles partial occlusion from practice nets better than many models
+  -Handles partial occlusion from practice nets better than many models
   
-  Provides 33 detailed body landmarks, including foot keypoints
+  -Provides 33 detailed body landmarks, including foot keypoints
   
-  Stable and usable out of the box without training or fine-tuning
+  -Stable and usable out of the box without training or fine-tuning
   
-Since the goal was movement analysis rather than model training, MediaPipe was the most suitable choice for this assignment.
-
  **Metrics Defined**
  
 The following metrics were extracted from the pose data:
@@ -67,17 +65,27 @@ Indicates balance and power generation through the front leg.
 Measures body balance and weight transfer during the stroke.
 
 **Observations & Limitations**
-While analyzing the video, several real-world challenges were observed:
-Jitter: Small frame-to-frame keypoint fluctuations
-Occlusion: Far-side joints hidden by the body in side view
-Incorrect keypoints: Practice net sometimes mistaken for joints
-Motion blur: Fast bat swings reduce wrist and bat clarity
-Single-view bias: Lack of depth information from one camera angle
+
+-Jitter: Small frame-to-frame keypoint fluctuations
+
+-Occlusion: Far-side joints hidden by the body in side view
+
+-Incorrect keypoints: Practice net sometimes mistaken for joints
+
+-Motion blur: Fast bat swings reduce wrist and bat clarity
+
+-Single-view bias: Lack of depth information from one camera angle
 
 **Improvement Plan**
+
 With more time and data, the following improvements would be made:
-Collect more cricket-specific videos across players and environments
-Use multiple camera angles for better depth understanding
-Combine outputs from multiple pose models
-Apply adaptive temporal filtering for fast movements
-Evaluate improvements using stability and consistency metrics
+
+-Collect more cricket-specific videos across players and environments
+
+-Use multiple camera angles for better depth understanding
+
+-Combine outputs from multiple pose models
+
+-Apply adaptive temporal filtering for fast movements
+
+-Evaluate improvements using stability and consistency metrics

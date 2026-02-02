@@ -12,6 +12,7 @@ Note: Real-world data is messy. You’ll notice some jitter due to the practice 
 
 
 **My approach**
+
 I did not want to treat this as just another assignment to submit and move on from. While working
 on it, I kept thinking that if I get selected, this kind of work would be part of real projects, not just
 practice. So I tried to build something that could work in realistic conditions instead of only
